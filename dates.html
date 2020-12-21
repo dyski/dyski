@@ -247,7 +247,7 @@ display: none;
   width: 100%;
 }
 .animated-title > div div {
-  font-size: 12vmin;
+  font-size: 10vmin;
   padding: 2vmin 0;
   position: absolute;
 }
@@ -319,7 +319,7 @@ button:hover {
 #sbutton button {
    min-width: 3.5em;
   font-size:12px;
-  margin-bottom: 0.3em;
+ 
     padding: .3em;
   
 }
@@ -428,6 +428,27 @@ $(document.head).find('#style-ui-bar').remove();
 */
 
 </tw-passagedata><tw-passagedata pid="9" name="PassageFooterNA" tags="" position="974,784" size="100,100">----</tw-passagedata><tw-passagedata pid="10" name="wsmini" tags="" position="660,640" size="100,100">&lt;&lt;nobr&gt;&gt;
+
+&lt;&lt;widget &quot;printslide&quot;&gt;&gt;
+		&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
+		&lt;div class=&quot;animated-title&quot;&gt;
+ 		 &lt;div class=&quot;text-top&quot;&gt;
+   		 &lt;div&gt;
+		&lt;span&gt;&lt;/span&gt;
+		&lt;span&gt;&lt;&lt;print $cornish[$count]&gt;&gt;&lt;/span&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;text-bottom&quot;&gt;
+    &lt;div&gt;&lt;span&gt;&lt;&lt;print $english[$count]&gt;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;
+&lt;&lt;/replace&gt;&gt;
+&lt;&lt;timed 1000ms&gt;&gt;&lt;&lt;audio $cornish[$count] play&gt;&gt;&lt;&lt;/timed&gt;&gt;		
+
+		
+&lt;&lt;/widget&gt;&gt;
+
+
 &lt;&lt;set $count to 0&gt;&gt;
 &lt;span&gt;
 &lt;span id=&quot;slide&quot;&gt;
@@ -442,28 +463,15 @@ $(document.head).find('#style-ui-bar').remove();
     &lt;div&gt;&lt;span&gt;&lt;&lt;print $english[$count]&gt;&gt;&lt;/span&gt;&lt;/div&gt;
   &lt;/div&gt; 
 &lt;/div&gt;
-&lt;&lt;audio $cornish[$count] play&gt;&gt;
 &lt;/span&gt;
+&lt;&lt;timed 1000ms&gt;&gt;&lt;&lt;audio $cornish[$count] play&gt;&gt;&lt;&lt;/timed&gt;&gt;	
 
 @@.prev;
 &lt;&lt;link &quot;&amp;#10094;&quot;&gt;&gt;
 &lt;&lt;if $count !== 0&gt;&gt;&lt;&lt;set $count--&gt;&gt;
-
-&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
-&lt;div class=&quot;animated-title&quot;&gt;
-  &lt;div class=&quot;text-top&quot;&gt;
-    &lt;div&gt;
-		&lt;span&gt;&lt;/span&gt;
-		&lt;span&gt;&lt;&lt;print $cornish[$count]&gt;&gt;&lt;/span&gt;
-	&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;text-bottom&quot;&gt;
-    &lt;div&gt;&lt;span&gt;&lt;&lt;print $english[$count]&gt;&gt;&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt; 
-&lt;/div&gt;
-&lt;&lt;/replace&gt;&gt;&lt;&lt;else&gt;&gt;
-
-&lt;&lt;/if&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;printslide&gt;&gt;
+&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 @@
 
 
@@ -471,19 +479,7 @@ $(document.head).find('#style-ui-bar').remove();
 &lt;&lt;link &quot;&amp;#10095;&quot;&gt;&gt;
 &lt;&lt;if $count !== $cornish.length-1&gt;&gt;
 &lt;&lt;set $count++&gt;&gt;
-&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
-&lt;div class=&quot;animated-title&quot;&gt;
-  &lt;div class=&quot;text-top&quot;&gt;
-    &lt;div&gt;
-		&lt;span&gt;&lt;/span&gt;
-		&lt;span&gt;&lt;&lt;print $cornish[$count]&gt;&gt;&lt;/span&gt;
-	&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;text-bottom&quot;&gt;
-    &lt;div&gt;&lt;span&gt;&lt;&lt;print $english[$count]&gt;&gt;&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt; 
-&lt;/div&gt;
-&lt;&lt;/replace&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;printslide&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;/link&gt;&gt;@@
 &lt;/span&gt;
 
