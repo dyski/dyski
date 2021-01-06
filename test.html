@@ -471,6 +471,8 @@ button:hover {
 /* play-btn.css */
 .play-btn{width:100px;height:100px;background:radial-gradient(rgba(244,212,51,.8) 60%,#fff 62%);border-radius:50%;position:relative;display:block;margin:100px auto;box-shadow:0 0 25px 3px rgba(244,212,51,.8)}.play-btn::after{content:"";position:absolute;left:50%;top:50%;-webkit-transform:translateX(-40%) translateY(-50%);transform:translateX(-40%) translateY(-50%);transform-origin:center center;width:0;height:0;border-top:15px solid transparent;border-bottom:15px solid transparent;border-left:25px solid #fff;z-index:100;-webkit-transition:all .4s cubic-bezier(.55,.055,.675,.19);transition:all .4s cubic-bezier(.55,.055,.675,.19)}.play-btn:before{content:"";position:absolute;width:150%;height:150%;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation:pulsate1 2s;animation:pulsate1 2s;-webkit-animation-direction:forwards;animation-direction:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:steps;animation-timing-function:steps;opacity:1;border-radius:50%;border:5px solid rgba(255,255,255,.75);top:-30%;left:-30%;background:rgba(198,16,0,0)}@-webkit-keyframes pulsate1{0%{-webkit-transform:scale(.6);transform:scale(.6);opacity:1;box-shadow:inset 0 0 25px 3px rgba(255,255,255,.75),0 0 25px 10px rgba(255,255,255,.75)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0;box-shadow:none}}@keyframes pulsate1{0%{-webkit-transform:scale(.6);transform:scale(.6);opacity:1;box-shadow:inset 0 0 25px 3px rgba(255,255,255,.75),0 0 25px 10px rgba(255,255,255,.75)}100%{-webkit-transform:scale(1,1);transform:scale(1);opacity:0;box-shadow:none}}
 /* end play-btn */
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.ui.stowBarInitially = true;
 Config.history.controls = false;
 Config.history.maxStates = 1;
@@ -500,8 +502,7 @@ $(document.head).find('#style-ui-bar').remove();
 	<<scrolldown [duration]>>
 	duration : (optional) The length of time to animate the scroll, as the strings 'fast' or 'slow' or a valid CSS time value (e.g. 5s and 500ms).  The default duration is 'slow'.
 */
-Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"html,body";if(this.args.length>0)switch(this.args[0]){case"fast":case"slow":t=this.args[0];break;default:try{t=Math.max(Engine.minDomActionDelay,Util.fromCssTime(this.args[0]))}catch(t){return this.error(t.message)}}else t="slow";setTimeout(function(){$(e).animate({scrollTop:$(document).height()-$(window).height()},t)},Engine.minDomActionDelay)}});
-</script><tw-passagedata pid="1" name="StoryInit" tags="" position="961,293" size="100,100">&lt;&lt;cacheaudio &quot;dy&#39;Lun&quot; &quot;./audio/dylun.mp3&quot;&gt;&gt;
+Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"html,body";if(this.args.length>0)switch(this.args[0]){case"fast":case"slow":t=this.args[0];break;default:try{t=Math.max(Engine.minDomActionDelay,Util.fromCssTime(this.args[0]))}catch(t){return this.error(t.message)}}else t="slow";setTimeout(function(){$(e).animate({scrollTop:$(document).height()-$(window).height()},t)},Engine.minDomActionDelay)}});</script><tw-passagedata pid="1" name="StoryInit" tags="" position="961,293" size="100,100">&lt;&lt;cacheaudio &quot;dy&#39;Lun&quot; &quot;./audio/dylun.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Meurth&quot; &quot;./audio/dymeurth.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Mergher&quot; &quot;./audio/dymergher.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Yow&quot; &quot;./audio/dyyow.mp3&quot;&gt;&gt;
@@ -558,7 +559,7 @@ Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"h
 
 */
 
-</tw-passagedata><tw-passagedata pid="9" name="PassageFooterNA" tags="" position="974,784" size="100,100">----</tw-passagedata><tw-passagedata pid="10" name="wsmini" tags="" position="967,927" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="9" name="PassageFooterNA" tags="" position="959,782" size="100,100">----</tw-passagedata><tw-passagedata pid="10" name="wsmini" tags="" position="962,909" size="100,100">&lt;&lt;nobr&gt;&gt;
 
 &lt;&lt;widget &quot;printslide&quot;&gt;&gt;
 		&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
@@ -985,7 +986,7 @@ Dialog.open();
 &lt;&lt;/nobr&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="12" name="dyskyn01" tags="" position="352,725.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="12" name="dyskyn01" tags="" position="1079,781" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-intro&quot; &quot;./audio/dskyn/01/th1-intro.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-01&quot; &quot;./audio/dskyn/01/th1-01.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-02&quot; &quot;./audio/dskyn/01/th1-02.mp3&quot;&gt;&gt;
@@ -1139,8 +1140,8 @@ Dialog.open();
 &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
 
-
 &lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;
+
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
