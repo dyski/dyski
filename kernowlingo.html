@@ -921,6 +921,7 @@ $args[_i]
 &lt;&lt;for _i to 0;  _i lt $args.length; _i++ &gt;&gt;
 &lt;&lt;= &#39;&lt;span id=&quot;btn&#39;+ _i +&#39;&quot; class=&quot;w3-round-xlarge&quot;&gt;
 &lt;&lt;button &quot;$args[_i]&quot;&gt;&gt;
+&lt;&lt;audio &quot;sndclick&quot; play&gt;&gt;
 &lt;&lt;checkena&gt;&gt;
 &lt;&lt;run $(&quot;#btn&#39;+ _i +&#39; button&quot;).prop(&quot;disabled&quot;, true)&gt;&gt;
 &lt;&lt;set _ans[_c] to &quot;&#39;+$args[_i]+&#39;&quot;&gt;&gt;
@@ -2186,7 +2187,7 @@ Dialog.open();
 &lt;&lt;link &quot;toggle fullscreen&quot;&gt;&gt; &lt;&lt;set Fullscreen.toggle();&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="StoryInit" tags="" position="1021,216.5" size="100,100">&lt;&lt;cacheaudio &quot;sndcorrect&quot; &quot;./audio/ui-sounds/correct.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;sndwrong&quot; &quot;./audio/ui-sounds/wrong.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;sndwrong&quot; &quot;./audio/ui-sounds/incorrect.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;sndclick&quot; &quot;./audio/ui-sounds/click02.mp3&quot;&gt;&gt;
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
