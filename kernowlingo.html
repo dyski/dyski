@@ -258,7 +258,7 @@ border:  1px solid #ccc;
 
 .flash button {
   margin-bottom:4px;
-  min-width:50px;
+  min-width:3.5em;
   border-color:black;
 }
 
@@ -1823,221 +1823,228 @@ Dialog.open();
 
 &lt;!-- DAYS --&gt;
 &lt;div class=&quot;w3-container&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;flash w3-small w3-round&quot;&gt;
+&lt;p&gt;
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Lun&#39;&#39;&lt;br/&gt;Monday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Lun&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Lun&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Lun&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Meurth&#39;&#39;&lt;br/&gt;Tuesday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Meurth&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Meurth&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Meurth&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Mergher&#39;&#39;&lt;br/&gt;Wednesday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Mergher&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Mergher&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Mergher&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Yow&#39;&#39;&lt;br/&gt;Thursday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Yow&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Yow&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Yow&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Gwener&#39;&#39;&lt;br/&gt;Friday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Gwener&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Gwener&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Gwener&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Sadorn&#39;&#39;&lt;br/&gt;Saturday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Sadorn&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Sadorn&quot;play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Sadorn&quot;play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot;&#39;&#39;dy&#39;Sul&#39;&#39;&lt;br/&gt;Sunday&quot;&gt;&gt;&lt;&lt;set $day to &quot;dy&#39;Sul&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;audio &quot;dy&#39;Sul&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;audio &quot;dy&#39;Sul&quot; play&gt;&gt;&lt;&lt;/button&gt;&gt;@@
 
+@@.flash.w3-round.w3-white.w3-small;
 &lt;&lt;button &quot; &lt;br/&gt;n/a&quot;&gt;&gt;&lt;&lt;set $day to &quot;&quot;&gt;&gt; 
 &lt;&lt;printdate&gt;&gt;
-&lt;&lt;/button&gt;&gt;
+&lt;&lt;/button&gt;&gt;@@
 
 
-&lt;/span&gt;
 &lt;/p&gt;
 
 
 &lt;!-- DATE --&gt;
 &lt;p&gt;
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;1ᵃ&#39;&#39;&lt;br/&gt;1ˢᵗ&quot;&gt;&gt;&lt;&lt;set $date to &quot;kynsa&quot;&gt;&gt;
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;2ᵃ&#39;&#39;&lt;br/&gt;2ⁿᵈ&quot;&gt;&gt;&lt;&lt;set $date to &quot;nessa&quot;&gt;&gt;
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio &quot;nessa&quot; play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;3ᵃ&#39;&#39;&lt;br/&gt;3ʳᵈ&quot;&gt;&gt;&lt;&lt;set $date to &quot;tressa&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;4ᵃ&#39;&#39;&lt;br/&gt;4ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;peswora&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;5ᵉˢ&#39;&#39;&lt;br/&gt;5ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;pympes&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;6ᵛᵉˢ&#39;&#39;&lt;br/&gt;6ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;hweghves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;7ᵛᵉˢ&#39;&#39;&lt;br/&gt;7ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;seythves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;8ᵛᵉˢ&#39;&#39;&lt;br/&gt;8ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;ethves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;9ᵛᵉˢ&#39;&#39;&lt;br/&gt;9ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;nawves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;10ᵛᵉˢ&#39;&#39;&lt;br/&gt;10ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;degves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;11ᵛᵉˢ&#39;&#39;&lt;br/&gt;11ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;unnegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;12ᵛᵉˢ&#39;&#39;&lt;br/&gt;12ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;dewdhegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;13ᵛᵉˢ&#39;&#39;&lt;br/&gt;13ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;tredhegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;14ᵛᵉˢ&#39;&#39;&lt;br/&gt;14ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;peswardhegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;15ᵛᵉˢ&#39;&#39;&lt;br/&gt;15ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;pymthegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;16ᵛᵉˢ&#39;&#39;&lt;br/&gt;16ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;hwetegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;17ᵛᵉˢ&#39;&#39;&lt;br/&gt;17ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;seytegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;18ᵛᵉˢ&#39;&#39;&lt;br/&gt;18ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;etegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;19ᵛᵉˢ&#39;&#39;&lt;br/&gt;19ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;nownsegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;20ᵛᵉˢ&#39;&#39;&lt;br/&gt;20ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;ugensves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;21ᵃ&#39;&#39;&lt;br/&gt;21ˢᵗ&quot;&gt;&gt;&lt;&lt;set $date to &quot;kynsa&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;22ᵃ&#39;&#39;&lt;br/&gt;22ⁿᵈ&quot;&gt;&gt;&lt;&lt;set $date to &quot;nessa&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;23ᵃ&#39;&#39;&lt;br/&gt;23ʳᵈ&quot;&gt;&gt;&lt;&lt;set $date to &quot;tressa&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;24ᵃ&#39;&#39;&lt;br/&gt;24ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;peswora&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;25ᵉˢ&#39;&#39;&lt;br/&gt;25ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;pympes&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;26ᵛᵉˢ&#39;&#39;&lt;br/&gt;26ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;hweghves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;27ᵛᵉˢ&#39;&#39;&lt;br/&gt;27ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;seythves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;28ᵛᵉˢ&#39;&#39;&lt;br/&gt;28ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;ethves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
@@ -2045,7 +2052,7 @@ Dialog.open();
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;29ᵛᵉˢ&#39;&#39;&lt;br/&gt;29ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;nawves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
@@ -2053,7 +2060,7 @@ Dialog.open();
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;30ᵛᵉˢ&#39;&#39;&lt;br/&gt;30ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;degves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
@@ -2061,7 +2068,7 @@ Dialog.open();
 &lt;&lt;timed 700ms&gt;&gt;&lt;&lt;audio &quot;warnugens&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
 
-@@.flash.w3-round.w3-amber;
+@@.flash.w3-round.w3-small.w3-amber;
 &lt;&lt;button &quot;&#39;&#39;31ᵛᵉˢ&#39;&#39;&lt;br/&gt;31ˢᵗ&quot;&gt;&gt;&lt;&lt;set $date to &quot;unnegves&quot;&gt;&gt; 
 &lt;&lt;set $ugens=true&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
