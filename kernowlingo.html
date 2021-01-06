@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="kernowlingo" startnode="2" creator="Twine" creator-version="2.3.10" ifid="9CEEF8BD-BF2C-468C-9E94-77E47B2B664F" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+	<tw-storydata name="kernowlingo" startnode="2" creator="Twine" creator-version="2.3.9" ifid="9CEEF8BD-BF2C-468C-9E94-77E47B2B664F" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
@@ -763,7 +763,7 @@ $(document.head).find('#style-ui-bar').remove();
 /*   <<scrolldown [duration]>>
 	duration : (optional) The length of time to animate the scroll, as the strings 'fast' or 'slow' or a valid CSS time value (e.g. 5s and 500ms).  The default duration is 'slow'.
 */
-Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"html,body";if(this.args.length>0)switch(this.args[0]){case"fast":case"slow":t=this.args[0];break;default:try{t=Math.max(Engine.minDomActionDelay,Util.fromCssTime(this.args[0]))}catch(t){return this.error(t.message)}}else t="slow";setTimeout(function(){$(e).animate({scrollTop:$(document).height()-$(window).height()},t)},Engine.minDomActionDelay)}});</script><tw-passagedata pid="1" name="widgets" tags="widget nobr" position="908,216.5" size="100,100">&lt;&lt;widget &quot;topbar&quot;&gt;&gt;
+Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"html,body";if(this.args.length>0)switch(this.args[0]){case"fast":case"slow":t=this.args[0];break;default:try{t=Math.max(Engine.minDomActionDelay,Util.fromCssTime(this.args[0]))}catch(t){return this.error(t.message)}}else t="slow";setTimeout(function(){$(e).animate({scrollTop:$(document).height()-$(window).height()},t)},Engine.minDomActionDelay)}});</script><tw-passagedata pid="1" name="widgets" tags="widget nobr" position="908,216" size="100,100">&lt;&lt;widget &quot;topbar&quot;&gt;&gt;
 &lt;div class=&quot;w3-row w3-border-bottom w3-padding-16&quot;&gt;
 &lt;div class=&quot;w3-col&quot; style=&quot;width:35px; padding: 4px&quot;&gt;
 &lt;span class=&quot;w3-round w3-tiny w3-block w3-white w3-center w3-text-black&quot;&gt;
@@ -835,7 +835,7 @@ $args[_i]
 
 &lt;&lt;widget iconwin&gt;&gt;
 &lt;img src=&quot;https://freight.cargo.site/w/150/i/f8d37adaaee2d50e7ff3d0271980744724ebc9e3fd58ae1a0c90e50cd10536e1/Wink_StickingOutTongue_488_12fps.gif&quot; style=&quot;vertical-align:middle;margin:0px&quot; height=100px width=100px&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="home" tags="nobr" position="410,385.5" size="100,100">&lt;&lt;navmenu&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="home" tags="nobr" position="410,385" size="100,100">&lt;&lt;navmenu&gt;&gt;
 &lt;div class=&quot;w3-container w3-margin-top&quot;&gt;
 &lt;&lt;button &quot;basic test&quot;&gt;&gt;
 &lt;&lt;goto &quot;l01a&quot;&gt;&gt;
@@ -861,7 +861,7 @@ $args[_i]
 	$(document).one(&quot;:passagerender&quot;, function (event) {
 		$(event.content).find(&quot;#home button&quot;).prop(&quot;disabled&quot;, true);
 	});
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="checkbutton" tags="widget nobr" position="1016,103.5" size="100,100">&lt;&lt;widget &quot;checkdis&quot;&gt;&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="checkbutton" tags="widget nobr" position="1016,103" size="100,100">&lt;&lt;widget &quot;checkdis&quot;&gt;&gt;
 &lt;&lt;script&gt;&gt;
 	$(document).one(&quot;:passagerender&quot;, function (event) {
 		$(event.content).find(&quot;#checkbut button&quot;).prop(&quot;disabled&quot;, true);
@@ -901,7 +901,7 @@ $args[_i]
 &lt;/span&gt;
 &lt;/div&gt;
 &lt;&lt;checkdis&gt;&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Button" tags="widget nobr" position="903,102.5" size="100,100">&lt;&lt;widget &quot;btn&quot;&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Button" tags="widget nobr" position="903,102" size="100,100">&lt;&lt;widget &quot;btn&quot;&gt;&gt;
 &lt;&lt;for _i to 0;  _i lt $args.length; _i++ &gt;&gt;
 &lt;&lt;= &#39;&lt;span id=&quot;btn&#39;+ _i +&#39;&quot; class=&quot;w3-round-xlarge&quot;&gt;
 &lt;&lt;button &quot;$args[_i]&quot;&gt;&gt;
@@ -917,7 +917,7 @@ $args[_i]
 
 &lt;&lt;widget &quot;bos-pres&quot;&gt;&gt;
 &lt;&lt;btn &quot;ov vy&quot; &quot;os ta&quot; &quot;yw ev&quot; &quot;yw hi&quot;&gt;&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="l01a" tags="" position="0,199.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="l01a" tags="" position="0,199" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;w3-container&quot;&gt;
 
 &lt;&lt;set _comp=0&gt;&gt;
@@ -943,7 +943,7 @@ $args[_i]
 
 
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="l01b" tags="" position="0,300.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="l01b" tags="" position="0,300" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;w3-container&quot;&gt;
 
 &lt;&lt;set _comp=10&gt;&gt;
@@ -967,7 +967,7 @@ $args[_i]
 
 &lt;&lt;checkbtn&gt;&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="l01c" tags="" position="1,401.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="l01c" tags="" position="1,401" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;w3-container&quot;&gt;
 
 &lt;&lt;set _comp=20&gt;&gt;
@@ -992,7 +992,7 @@ $args[_i]
 &lt;&lt;checkbtn&gt;&gt;
 
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="l01d" tags="" position="1,502.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="l01d" tags="" position="1,502" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;w3-container&quot;&gt;
 
 &lt;&lt;set _comp=30&gt;&gt;
@@ -1016,7 +1016,7 @@ $args[_i]
 
 &lt;&lt;checkbtn&gt;&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="l01e" tags="" position="0,622.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="l01e" tags="" position="0,622" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;w3-container&quot;&gt;
 
 &lt;&lt;set _comp=40&gt;&gt;
@@ -1040,7 +1040,7 @@ $args[_i]
 
 &lt;&lt;checkbtn&gt;&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="navmenu" tags="nobr widget" position="409,234.5" size="100,100">&lt;&lt;widget &quot;navmenu&quot;&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="navmenu" tags="nobr widget" position="409,234" size="100,100">&lt;&lt;widget &quot;navmenu&quot;&gt;&gt;
 &lt;div class=&quot;w3-container header&quot;&gt;
 &lt;div class=&quot;w3-cell-row w3-center w3-border-bottom&quot;&gt;
 
@@ -1064,7 +1064,7 @@ $args[_i]
 &lt;&lt;button &quot;tv&quot;&gt;&gt; &lt;&lt;set Fullscreen.toggle();&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="datebup" tags="nobr" position="583,236.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="datebup" tags="nobr" position="583,236" size="100,100">&lt;&lt;nobr&gt;&gt;
 
 
 
@@ -1519,7 +1519,7 @@ Dialog.open();
 &lt;&lt;/nobr&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="12" name="dyskyn 01" tags="" position="583,356.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="12" name="dyskyn 01" tags="" position="583,356" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-intro&quot; &quot;./audio/dskyn/01/th1-intro.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-01&quot; &quot;./audio/dskyn/01/th1-01.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-02&quot; &quot;./audio/dskyn/01/th1-02.mp3&quot;&gt;&gt;
@@ -1675,7 +1675,7 @@ Dialog.open();
 
 
 &lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;&lt;&lt;/cont&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="wsmini" tags="" position="592,489.5" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="wsmini" tags="" position="592,489" size="100,100">&lt;&lt;nobr&gt;&gt;
 
 &lt;&lt;widget &quot;printslide&quot;&gt;&gt;
 		&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
@@ -1731,51 +1731,51 @@ Dialog.open();
 &lt;&lt;/link&gt;&gt;@@
 &lt;/span&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="dates" tags="" position="255,237.5999984741211" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Lun&quot; &quot;./audio/dylun.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Meurth&quot; &quot;./audio/dymeurth.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Mergher&quot; &quot;./audio/dymergher.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Yow&quot; &quot;./audio/dyyow.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Gwener&quot; &quot;./audio/dygwener.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Sadorn&quot; &quot;./audio/dysadorn.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dy&#39;Sul&quot; &quot;./audio/dysul.mp3&quot;&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="dates" tags="" position="255,237" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Lun&quot; &quot;./audio/vocab/daysofweek/dylun.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Meurth&quot; &quot;./audio/vocab/daysofweek/dymeurth.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Mergher&quot; &quot;./audio/vocab/daysofweek/dymergher.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Yow&quot; &quot;./audio/vocab/daysofweek/dyyow.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Gwener&quot; &quot;./audio/vocab/daysofweek/dygwener.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Sadorn&quot; &quot;./audio/vocab/daysofweek/dysadorn.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dy&#39;Sul&quot; &quot;./audio/vocab/daysofweek/dysul.mp3&quot;&gt;&gt;
 
-&lt;&lt;cacheaudio &quot;mis-Genver&quot; &quot;./audio/misgenver.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Hwevrer&quot; &quot;./audio/mishwevrer.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Meurth&quot; &quot;./audio/mismeurth.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Ebrel&quot; &quot;./audio/misebrel.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Me&quot; &quot;./audio/misme.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Metheven&quot; &quot;./audio/mismetheven.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Gortheren&quot; &quot;./audio/misgortheren.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Gwynngala&quot; &quot;./audio/misgwynngala.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Est&quot; &quot;./audio/misest.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Hedra&quot; &quot;./audio/mishedra.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Du&quot; &quot;./audio/misdu.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;mis-Kevardhu&quot; &quot;./audio/miskevardhu.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Genver&quot; &quot;./audio/vocab/monthsofyear/misgenver.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Hwevrer&quot; &quot;./audio/vocab/monthsofyear/mishwevrer.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Meurth&quot; &quot;./audio/vocab/monthsofyear/mismeurth.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Ebrel&quot; &quot;./audio/vocab/monthsofyear/misebrel.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Me&quot; &quot;./audio/vocab/monthsofyear/misme.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Metheven&quot; &quot;./audio/vocab/monthsofyear/mismetheven.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Gortheren&quot; &quot;./audio/vocab/monthsofyear/misgortheren.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Gwynngala&quot; &quot;./audio/vocab/monthsofyear/misgwynngala.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Est&quot; &quot;./audio/vocab/monthsofyear/misest.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Hedra&quot; &quot;./audio/vocab/monthsofyear/mishedra.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Du&quot; &quot;./audio/vocab/monthsofyear/misdu.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;mis-Kevardhu&quot; &quot;./audio/vocab/monthsofyear/miskevardhu.mp3&quot;&gt;&gt;
 
-&lt;&lt;cacheaudio &quot;kynsa&quot; &quot;./audio/ordinalnum/kynsa.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;nessa&quot; &quot;./audio/ordinalnum/nessa.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;tressa&quot; &quot;./audio/ordinalnum/tressa.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;peswora&quot; &quot;./audio/ordinalnum/peswora.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;pympes&quot; &quot;./audio/ordinalnum/pympes.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;hweghves&quot; &quot;./audio/ordinalnum/hweghves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;seythves&quot; &quot;./audio/ordinalnum/seythves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;ethves&quot; &quot;./audio/ordinalnum/ethves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;nawves&quot; &quot;./audio/ordinalnum/nawves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;degves&quot; &quot;./audio/ordinalnum/degves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;unnegves&quot; &quot;./audio/ordinalnum/unnegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;dewdhegves&quot; &quot;./audio/ordinalnum/dewdhegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;tredhegves&quot; &quot;./audio/ordinalnum/tredhegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;peswardhegves&quot; &quot;./audio/ordinalnum/peswardhegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;pymthegves&quot; &quot;./audio/ordinalnum/pymthegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;hwetegves&quot; &quot;./audio/ordinalnum/hwetegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;seytegves&quot; &quot;./audio/ordinalnum/seytegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;etegves&quot; &quot;./audio/ordinalnum/etegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;nownsegves&quot; &quot;./audio/ordinalnum/nownsegves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;ugensves&quot; &quot;./audio/ordinalnum/ugensves.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;warnugens&quot; &quot;./audio/ordinalnum/warnugens.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;avis&quot; &quot;./audio/ordinalnum/avis.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;an&quot; &quot;./audio/ordinalnum/an.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;kynsa&quot; &quot;./audio/vocab/ordinalnum/kynsa.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;nessa&quot; &quot;./audio/vocab/ordinalnum/nessa.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;tressa&quot; &quot;./audio/vocab/ordinalnum/tressa.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;peswora&quot; &quot;./audio/vocab/ordinalnum/peswora.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;pympes&quot; &quot;./audio/vocab/ordinalnum/pympes.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;hweghves&quot; &quot;./audio/vocab/ordinalnum/hweghves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;seythves&quot; &quot;./audio/vocab/ordinalnum/seythves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;ethves&quot; &quot;./audio/vocab/ordinalnum/ethves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;nawves&quot; &quot;./audio/vocab/ordinalnum/nawves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;degves&quot; &quot;./audio/vocab/ordinalnum/degves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;unnegves&quot; &quot;./audio/vocab/ordinalnum/unnegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;dewdhegves&quot; &quot;./audio/vocab/ordinalnum/dewdhegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;tredhegves&quot; &quot;./audio/vocab/ordinalnum/tredhegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;peswardhegves&quot; &quot;./audio/vocab/ordinalnum/peswardhegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;pymthegves&quot; &quot;./audio/vocab/ordinalnum/pymthegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;hwetegves&quot; &quot;./audio/vocab/ordinalnum/hwetegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;seytegves&quot; &quot;./audio/vocab/ordinalnum/seytegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;etegves&quot; &quot;./audio/vocab/ordinalnum/etegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;nownsegves&quot; &quot;./audio/vocab/ordinalnum/nownsegves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;ugensves&quot; &quot;./audio/vocab/ordinalnum/ugensves.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;warnugens&quot; &quot;./audio/vocab/ordinalnum/warnugens.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;avis&quot; &quot;./audio/vocab/ordinalnum/avis.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;an&quot; &quot;./audio/vocab/ordinalnum/an.mp3&quot;&gt;&gt;
 &lt;&lt;navmenu&gt;&gt;
 &lt;&lt;set $day=&quot;&quot;&gt;&gt; 
 &lt;&lt;set $date=&quot;&quot;&gt;&gt;
@@ -1855,15 +1855,14 @@ Dialog.open();
 &lt;&lt;/button&gt;&gt;@@
 
 @@.choose.w3-round.w3-amber;
-&lt;&lt;button &quot;&#39;&#39;4ᵃ&#39;&#39;&lt;br/&gt;4ᵗʰ&quot;&gt;&gt;&lt;
-&lt;set $date to &quot;peswora&quot;&gt;&gt; 
+&lt;&lt;button &quot;&#39;&#39;4ᵃ&#39;&#39;&lt;br/&gt;4ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;peswora&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
 &lt;&lt;/button&gt;&gt;@@
+
 @@.choose.w3-round.w3-amber;
-&lt;&lt;button &quot;&#39;&#39;5ᵉˢ&#39;&#39;&lt;br/&gt;5ᵗʰ&quot;&gt;&gt;
-&lt;&lt;set $date to &quot;pympes&quot;&gt;&gt; 
+&lt;&lt;button &quot;&#39;&#39;5ᵉˢ&#39;&#39;&lt;br/&gt;5ᵗʰ&quot;&gt;&gt;&lt;&lt;set $date to &quot;pympes&quot;&gt;&gt; 
 &lt;&lt;set $ugens=false&gt;&gt;
 &lt;&lt;printdate&gt;&gt;
 &lt;&lt;audio $date play&gt;&gt;
