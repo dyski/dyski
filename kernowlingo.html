@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="kernowlingo" startnode="2" creator="Twine" creator-version="2.3.12" ifid="9CEEF8BD-BF2C-468C-9E94-77E47B2B664F" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+	<tw-storydata name="kernowlingo" startnode="2" creator="Twine" creator-version="2.3.13" ifid="9CEEF8BD-BF2C-468C-9E94-77E47B2B664F" zoom="1" format="SugarCube" format-version="2.34.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
@@ -853,23 +853,31 @@ h1,h2,h3,h4,h5,h6,p {
     }*/</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 // Game icon in tab.  Generated at: https://realfavicongenerator.net
-var favIco = setup.ImagePath + "favicon/";
+var favIco = setup.ImagePath + "./favicon/";
 $(document.head).append('<link rel="apple-touch-icon" sizes="180x180" href="' + favIco + 'apple-touch-icon.png">');
-$(document.head).append('<link rel="icon" type="image/png" sizes="194x194" href="/favicon/favicon-194x194.png">');
-$(document.head).append('<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">');
+$(document.head).append('<link rel="icon" type="image/png" sizes="194x194" href="./favicon/favicon-194x194.png">');
+$(document.head).append('<link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-chrome-192x192.png">');
 $(document.head).append('<link rel="icon" type="image/png" sizes="32x32" href="' + favIco + 'favicon-32x32.png">');
 $(document.head).append('<link rel="icon" type="image/png" sizes="16x16" href="' + favIco + 'favicon-16x16.png">');
 $(document.head).append('<link rel="manifest" href="' + favIco + 'site.webmanifest">');
-$(document.head).append('<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">');
+$(document.head).append('<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">');
 $(document.head).append('<link rel="shortcut icon" href="' + favIco + 'favicon.ico">');
 $(document.head).append('<meta name="msapplication-TileColor" content="#da532c">');
 $(document.head).append('<meta name="msapplication-config" content="' + favIco + 'browserconfig.xml">');
 $(document.head).append('<meta name="theme-color" content="#ffffff">');
 
 
+$(document.head).append('<meta name="viewport" content="width=device-width,initial-scale=1" />');
+$(document.head).append('<meta property="og:title" content="Kernowlingo">');
+$(document.head).append('<meta property="og:description" content="Learn Cornish web app">');
+$(document.head).append('<meta property="og:image" content="https://dyski.github.io/ogimage.jpg">');
+$(document.head).append('<meta property="og:url" content="https://dyski.github.io">');
+$(document.head).append('<meta property="og:type" content="website" ');
+
+
 
 //hashtag per page
-function hashChanged(){if(Engine.isIdle()){if(window.location.hash&&setup.storedHash!=window.location.hash){setup.storedHash=window.location.hash;var n=decodeURI(window.location.hash.substring(1));Story.has(n)&&passage()!==n&&Engine.play(n)}else window.location.hash=encodeURI(passage());document.title=passage()}else setTimeout(hashChanged,100)}"onhashchange"in window?window.onhashchange=function(){hashChanged()}:window.setInterval(function(){window.location.hash!=setup.storedHash&&hashChanged()},100),$(document).on(":passageend",function(){hashChanged()});
+function hashChanged(){if(Engine.isIdle()){if(window.location.hash&&setup.storedHash!=window.location.hash){setup.storedHash=window.location.hash;var n=decodeURI(window.location.hash.substring(1));Story.has(n)&&passage()!==n&&Engine.play(n)}else window.location.hash=encodeURI(passage());document.title=State.temporary.title}else setTimeout(hashChanged,100)}"onhashchange"in window?window.onhashchange=function(){hashChanged()}:window.setInterval(function(){window.location.hash!=setup.storedHash&&hashChanged()},100),$(document).on(":passageend",function(){hashChanged()});
 
 
 
@@ -1014,9 +1022,10 @@ $args[_i]
 &lt;&lt;widget iconwin&gt;&gt;
 &lt;img src=&quot;./img/win100.gif&quot; style=&quot;vertical-align:middle;margin:0px&quot; height=100px width=100px&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="home" tags="nobr" position="320,77" size="100,100">
+
 /% a one-second-long notification with the &#39;inventory-update&#39; class %/
 /%&lt;&lt;notify 5s &#39;inventory-update&#39;&gt;&gt;Click the speech bubbles to replay audio&lt;&lt;/notify&gt;&gt;%/
-&lt;&lt;set _title to &quot;&lt;b&gt;tre &lt;/b&gt;/ home&quot;&gt;&gt;
+&lt;&lt;set _title to &quot;Kernowlingo - Home&quot;&gt;&gt;
 &lt;&lt;footer&gt;&gt;
 
 
@@ -1036,21 +1045,21 @@ $args[_i]
 &lt;div class=&quot;w3-row-padding w3-stretch &quot;&gt; 
 
 &lt;&lt;card &quot;news201227&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;27th Dec 2020&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 	   
 &lt;&lt;card &quot;news210131&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;31st Jan 2021&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 
 &lt;&lt;card &quot;news210124&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;24th Jan 2021&quot;
@@ -1070,42 +1079,42 @@ $args[_i]
 &lt;div class=&quot;w3-row-padding w3-stretch &quot;&gt; 
 
  &lt;&lt;card &quot;bookreadall&quot; 
-       &quot;/img/card/book.jpg&quot;  
+       &quot;./img/card/book.jpg&quot;  
 	   &quot;book&quot;
 	   &quot;Winnie an Pooh&quot;
 	   &quot;Whinnie the pooh&quot;
 	   &quot;Chapter one, free on amazon&quot;&gt;&gt;
 
  &lt;&lt;card &quot;l01a&quot; 
-       &quot;/img/card/exam.jpg&quot;  
+       &quot;./img/card/exam.jpg&quot;  
 	   &quot;exam paper&quot;
 	   &quot;apposyans&quot;
 	   &quot;test&quot;
 	   &quot;Trial test&quot;&gt;&gt;
 
  &lt;&lt;card &quot;misyow&quot; 
-       &quot;/img/card/letters.jpg&quot; 
+       &quot;./img/card/letters.jpg&quot; 
 	   &quot;words&quot;
 	   &quot;Misyow&quot;
 	   &quot;Months&quot;
 	   &quot;Months of the year in Cornish&quot;&gt;&gt;
 
  &lt;&lt;card &quot;fellywnos3&quot; 
-       &quot;/img/card/letters.jpg&quot; 
+       &quot;./img/card/letters.jpg&quot; 
 	   &quot;words&quot;
 	   &quot;Gerva&quot;
 	   &quot;Fell yw an nos 3&quot;
 	   &quot;Some words from Fella yw an nos chapter 3 &quot;&gt;&gt;
 
   &lt;&lt;card &quot;dyskyn01&quot; 
-       &quot;/img/card/speechbubble.jpg&quot;  
+       &quot;./img/card/speechbubble.jpg&quot;  
 	   &quot;speech bubble&quot;
 	   &quot;Dyskyn&quot;
 	   &quot;lesson 1&quot;
 	   &quot;converstaion from dyskyn kernewek&quot;&gt;&gt;
    
    &lt;&lt;card &quot;news210117&quot; 
-      &quot;/img/card/newspaper.jpg&quot; 
+      &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;21st Jan 2021&quot;
@@ -1113,7 +1122,7 @@ $args[_i]
 	   
 	   
 	   &lt;&lt;card &quot;news210103&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;03rd Jan 2021&quot;
@@ -1121,7 +1130,7 @@ $args[_i]
 
 
    &lt;&lt;card &quot;prys&quot; 
-       &quot;/img/card/beach.jpg&quot; 
+       &quot;./img/card/beach.jpg&quot; 
 	   &quot;summer&quot;
 	   &quot;prys&quot;
 	   &quot;time / season&quot;
@@ -1129,7 +1138,7 @@ $args[_i]
 	   
 	   
 	   &lt;&lt;card &quot;dedhyow&quot; 
-       &quot;/img/card/diary.jpg&quot;  
+       &quot;./img/card/diary.jpg&quot;  
 	   &quot;calender&quot;
 	   &quot;dedhyow&quot;
 	   &quot;dates&quot;
@@ -1157,7 +1166,7 @@ Dydh da, ha dynnargh dhe’n kernowlingo
   
   
 &lt;script&gt;
-$(document.head).append(&quot;&lt;title&gt;hello&lt;/title&gt;&quot;);
+$(document.head).append(&#39;&lt;title&gt;Favicon checker&lt;/title&gt;&#39;);
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="3" name="checkbutton" tags="widget nobr" position="1230,97" size="100,100">&lt;&lt;widget &quot;checkdis&quot;&gt;&gt;
 &lt;&lt;script&gt;&gt;
 	$(document).one(&quot;:passagerender&quot;, function (event) {
@@ -1218,7 +1227,7 @@ $(document.head).append(&quot;&lt;title&gt;hello&lt;/title&gt;&quot;);
 &lt;&lt;widget &quot;bos-pres&quot;&gt;&gt;
 &lt;&lt;btn &quot;ov vy&quot; &quot;os ta&quot; &quot;yw ev&quot; &quot;yw hi&quot;&gt;&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="l01a" tags="" position="0,187" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;div class=&quot;w3-container&quot; style=&quot;max-width:500px&quot;&gt;
+&lt;div class=&quot;w3-container&quot;&gt;
 
 
 &lt;&lt;set _comp=10&gt;&gt;
@@ -1441,7 +1450,7 @@ $(document.head).append(&quot;&lt;title&gt;hello&lt;/title&gt;&quot;);
 &lt;/div&gt;
 
 &lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="11" name="dyskyn01" tags="nobr flash" position="477,978" size="100,100">&lt;&lt;cacheaudio &quot;th01-intro&quot; &quot;./audio/dskyn/01/th1-intro.mp3&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="dyskyn01" tags="nobr" position="477,978" size="100,100">&lt;&lt;cacheaudio &quot;th01-intro&quot; &quot;./audio/dskyn/01/th1-intro.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-01&quot; &quot;./audio/dskyn/01/th1-01.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-02&quot; &quot;./audio/dskyn/01/th1-02.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-03&quot; &quot;./audio/dskyn/01/th1-03.mp3&quot;&gt;&gt;
@@ -1457,7 +1466,7 @@ $(document.head).append(&quot;&lt;title&gt;hello&lt;/title&gt;&quot;);
 &lt;&lt;cacheaudio &quot;th01-13&quot; &quot;./audio/dskyn/01/th1-13.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-14&quot; &quot;./audio/dskyn/01/th1-14.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-15&quot; &quot;./audio/dskyn/01/th1-15.mp3&quot;&gt;&gt;
-
+&lt;&lt;set _title to &quot;dyskyn lesson 1&quot;&gt;&gt;
 &lt;&lt;set _titleK to &quot;dyskyn 01&quot;&gt;&gt;
 &lt;&lt;set _titleE to &quot;lesson one&quot;&gt;&gt;
 &lt;&lt;set _info to &quot;Click the speech bubbles to replay audio&quot;&gt;&gt;
@@ -1660,7 +1669,7 @@ $(document.head).append(&quot;&lt;title&gt;hello&lt;/title&gt;&quot;);
 &lt;&lt;set $month=&quot;&quot;&gt;&gt;
 &lt;&lt;set $vonth=&quot;&quot;&gt;&gt;
 &lt;&lt;set $ugens=false&gt;&gt;
-
+&lt;&lt;set _title to &quot;Flashcard Dates&quot;&gt;&gt;
 
 &lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
 &lt;&lt;flashheader &quot;&lt;b&gt;dedhyow &lt;/b&gt;/ dates&quot;&gt;&gt;
@@ -2280,7 +2289,7 @@ Dialog.open();
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="flashcards" tags="nobr" position="1086,905" size="100,100">
 /% a one-second-long notification with the &#39;inventory-update&#39; class %/
 /%&lt;&lt;notify 5s &#39;inventory-update&#39;&gt;&gt;Click the speech bubbles to replay audio&lt;&lt;/notify&gt;&gt;%/
-&lt;&lt;set _title to &quot;&lt;b&gt;tre &lt;/b&gt;/ home&quot;&gt;&gt;
+&lt;&lt;set _title to &quot;flashcards&quot;&gt;&gt;
 &lt;&lt;footer&gt;&gt;
 &lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
 &lt;&lt;topmenu &quot;_title&quot;&gt;&gt;
@@ -2297,7 +2306,7 @@ Dialog.open();
 
 
 &lt;&lt;card &quot;prys&quot; 
-       &quot;/img/card/beach.jpg&quot; 
+       &quot;./img/card/beach.jpg&quot; 
 	   &quot;summer&quot;
 	   &quot;prys&quot;
 	   &quot;time / season&quot;
@@ -2305,7 +2314,7 @@ Dialog.open();
 	   
 	   
 	   &lt;&lt;card &quot;dedhyow&quot; 
-       &quot;/img/card/diary.jpg&quot; 
+       &quot;./img/card/diary.jpg&quot; 
 	   &quot;calender&quot;
 	   &quot;dedhyow&quot;
 	   &quot;dates&quot;
@@ -2317,7 +2326,7 @@ Dialog.open();
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="PassageHeader" tags="nobr" position="1104,95" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="misyow" tags="nobr" position="131,978" size="100,100">&lt;&lt;cacheaudio &quot;mis-Genver&quot; &quot;./audio/vocab/monthsofyear/misgenver.mp3&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="PassageHeader" tags="nobr" position="1104,95" size="100,100">&lt;&lt;set _title to &quot;Kernowlingo&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="misyow" tags="nobr" position="131,978" size="100,100">&lt;&lt;cacheaudio &quot;mis-Genver&quot; &quot;./audio/vocab/monthsofyear/misgenver.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;mis-Hwevrer&quot; &quot;./audio/vocab/monthsofyear/mishwevrer.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;mis-Meurth&quot; &quot;./audio/vocab/monthsofyear/mismeurth.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;mis-Ebrel&quot; &quot;./audio/vocab/monthsofyear/misebrel.mp3&quot;&gt;&gt;
@@ -2336,19 +2345,61 @@ Dialog.open();
 &lt;&lt;footer&gt;&gt;
 
 
+&lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
 
-&lt;&lt;widget &quot;printslide&quot;&gt;&gt;
-&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
+
+&lt;div id=&quot;gridmain&quot; class=&quot;w3-col s12 m12 l12 w3-section&quot;&gt;
+
+&lt;&lt;link &quot;@@.w3-button.w3-display-topright.w3-padding.material-icons;close@@&quot;&gt;&gt;
+&lt;&lt;audio &quot;:playing&quot; stop&gt;&gt;
+&lt;&lt;print &#39;&lt;&lt;goto &quot;&#39; + previous() + &#39;&quot;&gt;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+
+
+&lt;span id=&quot;slide&quot;&gt;
 &lt;div class=&quot;animated-title&quot;&gt;
   &lt;div class=&quot;text-top&quot;&gt;
-   		 &lt;div&gt;&lt;&lt;print _cornish[_i]&gt;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;&lt;print _cornish[_i]&gt;&gt;
+	&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;text-bottom&quot;&gt;
     &lt;div&gt;&lt;&lt;print _english[_i]&gt;&gt;&lt;/div&gt;
   &lt;/div&gt; 
 &lt;/div&gt;
+&lt;&lt;timed 500ms&gt;&gt;
+&lt;&lt;audio _cornish[_i] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;/span&gt;
+
+@@.w3-display-left.w3-padding;
+&lt;&lt;button &quot;&amp;#10094;&quot;&gt;&gt;
+&lt;&lt;if _i !== 0&gt;&gt;&lt;&lt;set _i--&gt;&gt;
+&lt;&lt;printslide&gt;&gt;
+&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/button&gt;&gt;@@
+
+
+@@.w3-display-right.w3-padding;
+&lt;&lt;button &quot;&amp;#10095;&quot;&gt;&gt;
+&lt;&lt;if _i !== _cornish.length-1&gt;&gt;
+&lt;&lt;set _i++&gt;&gt;
+&lt;&lt;printslide&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;/button&gt;&gt;@@
+
+&lt;/div&gt;
+
+
+&lt;&lt;widget &quot;printslide&quot;&gt;&gt;
+&lt;&lt;replace &quot;#slide&quot;&gt;&gt;
+&lt;div class=&quot;animated-title&quot;&gt;
+  &lt;div class=&quot;text-top&quot;&gt;
+   		 &lt;div&gt;_cornish[_i]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;text-bottom&quot;&gt;
+    &lt;div&gt;_english[_i]&lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;timed 500ms&gt;&gt;&lt;&lt;audio _cornish[_i] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 500ms&gt;&gt;
+&lt;&lt;audio _cornish[_i] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="wsmini" tags="nobr" position="367,980" size="100,100">
 &lt;&lt;set _i to 0&gt;&gt;
 &lt;div class=&quot;w3-content w3-display-container&quot;&gt;
@@ -2605,7 +2656,7 @@ Dialog.open();
 &lt;&lt;for _i to 0; _i lt _cornish.length; _i++&gt;&gt;
 &lt;&lt;book _cornish[_i] _english[_i]&gt;&gt;
 &lt;&lt;/for&gt;&gt;
-&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="bookreadall" tags="nobr" position="210,77" size="100,100">
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="bookreadall" tags="nobr" position="210,77" size="100,100">&lt;&lt;set _title to &quot;Winnie an pooh&quot;&gt;&gt;
 &lt;&lt;set _i to 0&gt;&gt;
 &lt;&lt;set _cornish to [
 
@@ -3116,7 +3167,7 @@ Dialog.open();
 &lt;footer class=&quot;w3-container w3-padding-small&quot;&gt;
 &lt;div class=&quot;w3-cell-row w3-cell-middle &quot; style=&quot;border-top:3px solid #ffc107;&quot;&gt;
 &lt;div class=&quot;w3-left&quot;&gt;&lt;h5&gt;
-&lt;&lt;link &quot;@@.material-icons;home @@&quot;&gt;&gt;&lt;&lt;goto &quot;home&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;@@.material-icons;home @@&quot;&gt;&gt;&lt;&lt;goto &quot;flashcards&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/h5&gt;&lt;/div&gt;
 
 &lt;div class=&quot;w3-right&quot;&gt;
@@ -3131,7 +3182,7 @@ Dialog.open();
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="an-nowodhow" tags="nobr" position="860,783" size="100,100">
 /% a one-second-long notification with the &#39;inventory-update&#39; class %/
 /%&lt;&lt;notify 5s &#39;inventory-update&#39;&gt;&gt;Click the speech bubbles to replay audio&lt;&lt;/notify&gt;&gt;%/
-&lt;&lt;set _title to &quot;&lt;b&gt;tre &lt;/b&gt;/ home&quot;&gt;&gt;
+&lt;&lt;set _title to &quot;An Nowodhow&quot;&gt;&gt;
 &lt;&lt;footer&gt;&gt;
 &lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
 &lt;&lt;topmenu &quot;_title&quot;&gt;&gt;
@@ -3146,42 +3197,42 @@ Dialog.open();
 &lt;div class=&quot;w3-row-padding w3-stretch &quot;&gt; 
 
 &lt;&lt;card &quot;news201206&quot; 
-       &quot;/img/card/newspaper.jpg&quot;  
+       &quot;./img/card/newspaper.jpg&quot;  
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;06th Dec 2020&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 
 &lt;&lt;card &quot;news201213&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;13th Dec 2020&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 
 &lt;&lt;card &quot;news201220&quot; 
-       &quot;/img/card/newspaper.jpg&quot;  
+       &quot;./img/card/newspaper.jpg&quot;  
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;20th Dec 2020&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 
 &lt;&lt;card &quot;news201227&quot; 
-       &quot;/img/card/newspaper.jpg&quot;  
+       &quot;./img/card/newspaper.jpg&quot;  
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;27th Dec 2020&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 
 &lt;&lt;card &quot;news210131&quot; 
-       &quot;/img/card/newspaper.jpg&quot;  
+       &quot;./img/card/newspaper.jpg&quot;  
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;31st Jan 2021&quot;
 	   &quot;Weekly news in Cornish broadcast on BBC Radio Cornwall, Sunday afternoon&quot;&gt;&gt;
 
 &lt;&lt;card &quot;news210124&quot; 
-      &quot;/img/card/newspaper.jpg&quot; 
+      &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;24th Jan 2021&quot;
@@ -3190,7 +3241,7 @@ Dialog.open();
 
 
 &lt;&lt;card &quot;news210117&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;17th Jan 2021&quot;
@@ -3198,7 +3249,7 @@ Dialog.open();
 	   
 	   
 	   &lt;&lt;card &quot;news210103&quot; 
-       &quot;/img/card/newspaper.jpg&quot; 
+       &quot;./img/card/newspaper.jpg&quot; 
 	   &quot;newspaper&quot;
 	   &quot;An Nowodhow&quot;
 	   &quot;03rd Jan 2021&quot;
@@ -3220,7 +3271,7 @@ Dialog.open();
 </tw-passagedata><tw-passagedata pid="26" name="gerva" tags="nobr" position="125,864" size="100,100">
 /% a one-second-long notification with the &#39;inventory-update&#39; class %/
 /%&lt;&lt;notify 5s &#39;inventory-update&#39;&gt;&gt;Click the speech bubbles to replay audio&lt;&lt;/notify&gt;&gt;%/
-&lt;&lt;set _title to &quot;&lt;b&gt;tre &lt;/b&gt;/ home&quot;&gt;&gt;
+&lt;&lt;set _title to &quot;Gerva / Vocab&quot;&gt;&gt;
 &lt;&lt;footer&gt;&gt;
 &lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
 &lt;&lt;topmenu &quot;_title&quot;&gt;&gt;
@@ -3237,14 +3288,14 @@ Dialog.open();
 
 
 &lt;&lt;card &quot;misyow&quot; 
-       &quot;/img/card/letters.jpg&quot;  
+       &quot;./img/card/letters.jpg&quot;  
 	   &quot;words&quot;
 	   &quot;Misyow&quot;
 	   &quot;Months&quot;
 	   &quot;Months of the year in Cornish&quot;&gt;&gt;
 
  &lt;&lt;card &quot;fellywnos3&quot; 
-       &quot;/img/card/letters.jpg&quot;  
+       &quot;./img/card/letters.jpg&quot;  
 	   &quot;words&quot;
 	   &quot;Gerva&quot;
 	   &quot;Fell yw an nos 3&quot;
