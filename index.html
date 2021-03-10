@@ -1049,19 +1049,8 @@ Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"h
  &lt;div class=&quot;w3-col w3-center w3-padding-64&quot;&gt;
       &lt;span class=&quot;w3-xlarge w3-bottombar w3-border-amber w3-padding-16&quot;&gt;Whats new&lt;/span&gt;
     &lt;/div&gt;
-
 &lt;div class=&quot;w3-row-padding w3-stretch &quot;&gt; 
-&lt;&lt;if $level lt 1&gt;&gt;
-&lt;div class=&quot;w3-col s6 m4 l2 w3-section&quot; style=&quot;height:300px&quot;&gt;
-      &lt;div class=&quot;w3-card-2 box&quot; style=&quot;border-top: 3px solid red;&quot;&gt;
-		&lt;img src=&quot;./img/card/locked.jpg&quot; style=&quot;width:100%&quot;&gt;
-        &lt;div class=&quot;w3-container compact&quot;&gt;
-          &lt;p&gt;&lt;b&gt;Level 2&lt;/b&gt;&lt;br/&gt;LOCKED&lt;/p&gt;
-          &lt;p&gt;complete level 1 to unlock&lt;/p&gt;
-		&lt;/div&gt;
-      &lt;/div&gt;&lt;/div&gt;
-
-&lt;&lt;else&gt;&gt;
+&lt;&lt;if $level gt 0&gt;&gt;
 &lt;div class=&quot;w3-col s6 m4 l2 w3-section&quot; style=&quot;height:300px&quot;&gt;
 &lt;a href=&quot;#&#39;l02a&#39;&quot;&gt;
        &lt;div class=&quot;w3-card-2 box&quot;&gt;
@@ -1072,6 +1061,17 @@ Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"h
 		&lt;/div&gt;
       &lt;/div&gt;&lt;/a&gt;
 &lt;/div&gt;
+
+
+&lt;&lt;else&gt;&gt;
+&lt;div class=&quot;w3-col s6 m4 l2 w3-section&quot; style=&quot;height:300px&quot;&gt;
+      &lt;div class=&quot;w3-card-2 box&quot; style=&quot;border-top: 3px solid red;&quot;&gt;
+		&lt;img src=&quot;./img/card/locked.jpg&quot; style=&quot;width:100%&quot;&gt;
+        &lt;div class=&quot;w3-container compact&quot;&gt;
+          &lt;p&gt;&lt;b&gt;Level 2&lt;/b&gt;&lt;br/&gt;LOCKED&lt;/p&gt;
+          &lt;p&gt;complete level 1 to unlock &lt;&lt;print $level&gt;&gt;&lt;/p&gt;
+		&lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;
 &lt;&lt;/if&gt;&gt; 
 
 &lt;&lt;card &quot;diwes&quot; 
@@ -2111,8 +2111,7 @@ Dialog.open();
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="StoryInit" tags="" position="1211,533" size="100,100">&lt;&lt;cacheaudio &quot;sndcorrect&quot; &quot;./audio/ui-sounds/correct.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;sndwrong&quot; &quot;./audio/ui-sounds/incorrect.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;sndclick&quot; &quot;./audio/ui-sounds/click02.mp3&quot;&gt;&gt;
-&lt;&lt;ignore .header&gt;&gt;
-&lt;&lt;set $level=0&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="prys" tags="nobr flash" position="976,1000" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;ignore .header&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="prys" tags="nobr flash" position="976,1000" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Lun&quot; &quot;./audio/vocab/daysofweek/dylun.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Meurth&quot; &quot;./audio/vocab/daysofweek/dymeurth.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Mergher&quot; &quot;./audio/vocab/daysofweek/dymergher.mp3&quot;&gt;&gt;
@@ -4165,6 +4164,7 @@ Dialog.open();
 &lt;&lt;set _english to [&quot;a drink&quot;, &quot;water&quot;, &quot;wine&quot;, &quot;red wine&quot;, &quot;white wine&quot;, &quot;tea&quot;, &quot;coffee&quot;, &quot;beer&quot;, &quot;milk&quot;, &quot;lime&quot;, &quot;lemon&quot;, &quot;orange juice&quot;, &quot;tea pot&quot;, &quot;cup&quot;, &quot;drinking glass&quot;, &quot;to pour (verb)&quot;, &quot;soft drink&quot;, &quot;to drink (verb)&quot;]&gt;&gt;
 
 
+&lt;&lt;set $level to 1&gt;&gt;
 &lt;&lt;set _i to 0&gt;&gt;
 &lt;&lt;footer&gt;&gt;
 
