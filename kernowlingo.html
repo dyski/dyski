@@ -890,12 +890,13 @@ $(document.head).append('<meta property="og:type" content="website" ');
 function hashChanged(){if(Engine.isIdle()){if(window.location.hash&&setup.storedHash!=window.location.hash){setup.storedHash=window.location.hash;var n=decodeURI(window.location.hash.substring(1));Story.has(n)&&passage()!==n&&Engine.play(n)}else window.location.hash=encodeURI(passage());document.title=State.temporary.title}else setTimeout(hashChanged,100)}"onhashchange"in window?window.onhashchange=function(){hashChanged()}:window.setInterval(function(){window.location.hash!=setup.storedHash&&hashChanged()},100),$(document).on(":passageend",function(){hashChanged()});
 
 
-
-
-
-
 $('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();
+
+
+// Automatically loads the autosave
+Config.saves.autosave = true;
+Config.saves.autoload = true;
 
 // Uses passages' titles
 Config.passages.descriptions = true;
