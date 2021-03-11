@@ -1050,6 +1050,8 @@ Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"h
       &lt;span class=&quot;w3-xlarge w3-bottombar w3-border-amber w3-padding-16&quot;&gt;Whats new&lt;/span&gt;
     &lt;/div&gt;
 &lt;div class=&quot;w3-row-padding w3-stretch &quot;&gt; 
+
+
 &lt;&lt;if $level gt 0&gt;&gt;
 &lt;div class=&quot;w3-col s6 m4 l2 w3-section&quot; style=&quot;height:300px&quot;&gt;
 &lt;a href=&quot;#&#39;l02a&#39;&quot;&gt;
@@ -2111,7 +2113,10 @@ Dialog.open();
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="StoryInit" tags="" position="1211,533" size="100,100">&lt;&lt;cacheaudio &quot;sndcorrect&quot; &quot;./audio/ui-sounds/correct.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;sndwrong&quot; &quot;./audio/ui-sounds/incorrect.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;sndclick&quot; &quot;./audio/ui-sounds/click02.mp3&quot;&gt;&gt;
-&lt;&lt;ignore .header&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="prys" tags="nobr flash" position="976,1000" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;ignore .header&gt;&gt;
+&lt;&lt;if ndef $level&gt;&gt;
+	&lt;&lt;set $level to 0&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="prys" tags="nobr flash" position="976,1000" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Lun&quot; &quot;./audio/vocab/daysofweek/dylun.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Meurth&quot; &quot;./audio/vocab/daysofweek/dymeurth.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dy&#39;Mergher&quot; &quot;./audio/vocab/daysofweek/dymergher.mp3&quot;&gt;&gt;
