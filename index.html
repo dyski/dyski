@@ -1084,6 +1084,13 @@ Macro.add("scrolldown",{handler:function(){var t,e=document.scrollingElement||"h
 	   &quot;justatest&quot;
 	   &quot;some inffo&quot;&gt;&gt;
 	   
+	   &lt;&lt;card &quot;test03&quot; 
+       &quot;./img/card/drinks.jpg&quot;  
+	   &quot;test 03 dam&quot;
+	   &quot;test01&quot;
+	   &quot;justatest&quot;
+	   &quot;some inffo&quot;&gt;&gt;
+	   
 	   
 	   &lt;&lt;card &quot;test02&quot; 
        &quot;./img/card/drinks.jpg&quot;  
@@ -1512,7 +1519,7 @@ $(document.head).append(&#39;&lt;title&gt;Favicon checker&lt;/title&gt;&#39;);
 &lt;/div&gt;
 
 &lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="11" name="dyskyn01" tags="nobr" position="738,1003" size="100,100">&lt;&lt;cacheaudio &quot;th01-intro&quot; &quot;./audio/dskyn/01/th1-intro.mp3&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="dyskyn01" tags="nobr" position="400,852" size="100,100">&lt;&lt;cacheaudio &quot;th01-intro&quot; &quot;./audio/dskyn/01/th1-intro.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-01&quot; &quot;./audio/dskyn/01/th1-01.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-02&quot; &quot;./audio/dskyn/01/th1-02.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;th01-03&quot; &quot;./audio/dskyn/01/th1-03.mp3&quot;&gt;&gt;
@@ -4411,11 +4418,9 @@ Dialog.open();
 
 ]&gt;&gt;
 
-
-
-&lt;&lt;set _titleK to &quot;An Nowodhow &quot;&gt;&gt;
-&lt;&lt;set _titleE to &quot;/ 03 01 21&quot;&gt;&gt;
-&lt;&lt;set _info to &quot;Hover text to see translation, click the text to replay audio.&quot;&gt;&gt;
+&lt;&lt;set _titleK to &quot;Winnie an Pou&quot;&gt;&gt;
+&lt;&lt;set _titleE to &quot;/ Chapter 1&quot;&gt;&gt;
+&lt;&lt;set _info to &quot;Free sample from Amazon Kindle, &lt;br/&gt;Click the sentances to reveal translations.&quot;&gt;&gt;
 &lt;&lt;footer&gt;&gt;
 &lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
 
@@ -4424,19 +4429,73 @@ Dialog.open();
 
 
 
+
 &lt;div id=&quot;gridmain&quot; class=&quot;w3-col s12 m9 l6&quot;&gt;
-&lt;span id=&quot;chap&quot;&gt;
-&lt;&lt;link &quot;@@.play-btn;@@&quot;&gt;&gt;
-&lt;&lt;remove &quot;.play-btn&quot;&gt;&gt;&gt;
-&lt;&lt;sentance _i&gt;&gt;
-&lt;&lt;/link&gt;&gt;
-&lt;/span&gt;
+&lt;&lt;for _i to 0; _i lt _cornish.length; _i++&gt;&gt;
+&lt;p&gt;&lt;div class=&#39;tooltip&#39; style=&#39;&#39;&gt;&lt;&lt;link &quot;_cornish[_i]&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;span class=&quot;tooltiptext&quot;&gt;_english[_i]&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;&lt;/for&gt;&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;left&quot; class=&quot;w3-col s12 m2 l3&quot;&gt;
+</tw-passagedata><tw-passagedata pid="38" name="test03" tags="nobr" position="668,1110.2000122070312" size="100,100">
+&lt;&lt;set _i to 0&gt;&gt;
+&lt;&lt;set _cornish to [
+
+&quot;Dydh da pub huni. Yth esov yn Kernow.&quot;,
+&quot;Dydh da ha dynnargh dhywgh!&quot;,
+&quot;Lavar ‘dydh da’ dhe’m koweth byghan.&quot;,
+&quot;Dydh da ha dynnargh dhe Gernow.&quot;,
+&quot;Ha Mothercare a igoras aga gwerthji nowydh yn Trelosk, Truru gans arwodhyow ow tynnerghi prenoryon gans an geryow “Dydh da Kernow”.&quot;,
+&quot;Dydh da. Fatla genes? Yma mabwynn aral dhyn.&quot;,
+&quot;Dydh da arlodhesow ha tus jentyl, dynnargh tomm a-bervedh a-dhyworth agan para ra&#39;gas neyj hedhyw y&#39;gan gonis nowydh Tewynblustri - Heathrow .&quot;,
+&quot;Dydh da, ow hanow yw Edoardo.&quot;,
+&quot;Dydh da ha dynnargh dhe’n kynsa Pennkuntelles Minoryta Kenedhlek an RU.&quot;,
+&quot;Dydh da, a allav vy kavos pinta Tribute?&quot;,
+&quot;Duw genes, dydh da re&#39;fo.&quot;,
+&quot;Dydh da&quot;,
+&quot;Dydh da hynsa, fatla genowgh?&quot;,
+
+
+]&gt;&gt;
+
+&lt;&lt;set _english to [
+&quot;Hi everyone. I&#39;m in Cornwall.&quot;,
+&quot;Hello and welcome!&quot;,
+&quot;Say &#39;hello&#39; to my little friend.&quot;,
+&quot;Hello and welcome to Cornwall&quot;,
+&quot;And Mothercare has opened their new store in Treliske, Truro with signs welcoming customers with the words “Hello Cornwall” in Cornish.&quot;,
+&quot;Hello. How are you? We have another grandson&quot;,
+&quot;Hello ladies and gentlemen, a warm welcome on board from the team for your flight today on our new Newquay-Heathrow service.&quot;,
+&quot;Hi, My name is Edoardo.&quot;,
+&quot;Hello and welcome to the inaugural UK National Minority Summit.&quot;,
+&quot;Hello can I have a pint of Tribute?&quot;,
+&quot;Goodbye, have a good day.&quot;,
+&quot;Hello&quot;,
+&quot;hello, fellow peers how are you doing?&quot;,
+
+]&gt;&gt;
+
+&lt;&lt;set _titleK to &quot;Winnie an Pou&quot;&gt;&gt;
+&lt;&lt;set _titleE to &quot;/ Chapter 1&quot;&gt;&gt;
+&lt;&lt;set _info to &quot;Free sample from Amazon Kindle, &lt;br/&gt;Click the sentances to reveal translations.&quot;&gt;&gt;
+&lt;&lt;footer&gt;&gt;
+&lt;div class=&quot;w3-container w3-row-padding&quot;&gt;
+
+&lt;&lt;topmenu&gt;&gt;
+&lt;&lt;leftbar&gt;&gt;
+
+
+
+
+&lt;div id=&quot;gridmain&quot; class=&quot;w3-col s12 m9 l6&quot;&gt;
+&lt;&lt;for _i to 0; _i lt _cornish.length; _i++&gt;&gt;
+&lt;p&gt;&lt;div class=&#39;tooltip&#39; style=&#39;&#39;&gt;&lt;&lt;link &quot;_cornish[_i]&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;span class=&quot;tooltiptext&quot;&gt;_english[_i]&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;&lt;/for&gt;&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
