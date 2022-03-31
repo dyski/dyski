@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-visit https://dyski.github.io/ to see this in action.
+visit https://cornish.app to see this in action.
 
 
 
