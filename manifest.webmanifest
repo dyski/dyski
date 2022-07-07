@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Shows random Cornish. Hey, at least it isn't cats.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Awesome Cornish",
+  "short_name": "Cornish",
+  "start_url": "index.html"
+}
