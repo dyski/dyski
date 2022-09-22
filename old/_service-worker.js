@@ -1,7 +1,7 @@
 // To clear cache on devices, always increase APP_VER number after making changes.
 // The app will serve fresh content right away or after 2-3 refreshes (open / close)
 var APP_NAME = 'Cornish.app';
-var APP_VER = '1.0.1';
+var APP_VER = '1.1.1';
 var CACHE_NAME = APP_NAME + '-' + APP_VER;
 
 // Files required to make this app work offline.
@@ -17,25 +17,11 @@ var REQUIRED_FILES = [
 	'scripts/custom.js',
 	'scripts/bootstrap.min.js',
 	// Plugins
-	'plugins/before-after/before-after.css',
-	'plugins/before-after/before-after.js',
-	'plugins/charts/charts.js',
-	'plugins/charts/charts-call-graphs.js',
-	'plugins/countdown/countdown.js',
-	'plugins/filterizr/filterizr.js',
-	'plugins/filterizr/filterizr.css',
-	'plugins/filterizr/filterizr-call.js',
-	'plugins/galleryViews/gallery-views.js',
-	'plugins/glightbox/glightbox.js',
-	'plugins/glightbox/glightbox.css',
-	'plugins/glightbox/glightbox-call.js',
+	
 	// Fonts
-	'fonts/css/fontawesome-all.min.css',
-	'fonts/webfonts/fa-brands-400.woff2',
-	'fonts/webfonts/fa-regular-400.woff2',
-	'fonts/webfonts/fa-solid-900.woff2',
+	
 	// Images
-	'images/empty.png',
+	'img/win.gif',
 ];
 
 // Service Worker Diagnostic. Set true to get console logs.
@@ -91,3 +77,6 @@ self.addEventListener('activate', function(event) {
 	);
 	if(APP_DIAG){console.log('Service Worker: Activated')}
 });
+
+self.addEventListener('install', () => self.skipWaiting());
+self.addEventListener('activate', () => self.clients.claim());
