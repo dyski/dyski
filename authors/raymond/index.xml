@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raymond on Cornish Learn</title>
-    <link>http://cornish.app/authors/raymond/</link>
+    <link>https://cornish.app/authors/raymond/</link>
     <description>Recent content in Raymond on Cornish Learn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 23:11:13 +0000</lastBuildDate><atom:link href="http://cornish.app/authors/raymond/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 23:11:13 +0000</lastBuildDate><atom:link href="https://cornish.app/authors/raymond/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My third Post</title>
-      <link>http://cornish.app/posts/my-third-post/</link>
+      <link>https://cornish.app/posts/my-third-post/</link>
       <pubDate>Wed, 26 Jan 2022 23:11:13 +0000</pubDate>
       
-      <guid>http://cornish.app/posts/my-third-post/</guid>
+      <guid>https://cornish.app/posts/my-third-post/</guid>
       <description>&lt;p&gt;Lorem the third ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor 
 aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis. 
@@ -25,10 +25,10 @@ semper risus in hendrerit gravida rutrum.&lt;/p&gt;</description>
     
     <item>
       <title>My First Post</title>
-      <link>http://cornish.app/posts/spf13-vim-3-0-release-and-new-website/</link>
+      <link>https://cornish.app/posts/spf13-vim-3-0-release-and-new-website/</link>
       <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
       
-      <guid>http://cornish.app/posts/spf13-vim-3-0-release-and-new-website/</guid>
+      <guid>https://cornish.app/posts/spf13-vim-3-0-release-and-new-website/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor 
 aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis. 
